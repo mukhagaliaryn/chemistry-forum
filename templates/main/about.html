@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Автор жайлы{% endblock title %}
+
+{% block content %}
+    <div id="about" class="bg-white px-6 py-6 rounded-lg grid gap-4 grid-cols-1 sm:grid-cols-2 my-4 mx-2 sm:mx-0">
+        <div id="autor-img" class="overflow-hidden rounded-lg">
+            <img src="{% static 'images/author.jpg' %}" alt="">
+        </div>
+        <div class="mt-2">
+            <h1 class="text-2xl font-bold text-center">Шәбден Жадыра Рахманқұлқызы </h1>
+            <div class="flex flex-col mt-4 text-center">
+                <span class="text-gray-600">Химия - биология пәндерінің мұғалімі</span>
+                <span class="text-gray-600">Педагогика ғылымдарының магистрі</span>
+            </div>
+            
+            <div class="border-b mt-6 py-2">
+                <span class="font-bold text-gray-800">Идеяны қорғайтын бағыты:</span>
+                <span class="text-gray-500">«Шеберлік палитрасы»</span>
+            </div>
+            <div class="border-b mt-4 py-2">
+                <span class="font-bold text-gray-800">Лауазымы:</span>
+                <span class="text-gray-500">Химия –биология пәндерінің мұғалімі, Педагогика ғылымдарының магистрі</span>
+            </div>
+            <div class="border-b mt-4 py-2">
+                <span class="font-bold text-gray-800">Жұмыс орны:</span>
+                <span class="text-gray-500">
+                    А.С.Пушкин атындағы №1 мектеп-гимназия, 
+                    Рысқұлбеков 12 үй.
+                </span>
+            </div>
+            <div class="border-b mt-4 py-2">
+                <span class="font-bold text-gray-800">Автордың мекен жайы: </span>
+                <span class="text-gray-500">Шымкент қ., 8-ші мөлтек ауданы Мангелдина көшесі 44 үй.</span>
+            </div>
+            <div class="border-b mt-4 py-2">
+                <span class="font-bold text-gray-800">Электронды почта: </span>
+                <span class="text-gray-500">zhadyra.shabden@bk.ru</span>
+            </div>
+            <div class="border-b mt-4 py-2">
+                <span class="font-bold text-gray-800">Байланыс тел: </span>
+                <span class="text-gray-500">+77018364507</span>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}
