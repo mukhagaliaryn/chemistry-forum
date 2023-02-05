@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Бұлшық ет{% endblock title %}
+
+{% block content %}
+    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 my-5 mx-2 md:mx-0">
+        <div class="overflow-hidden rounded-lg w-full md:w-[480px]">
+            <img src="{% static 'images/muscle.png' %}" class="rounded-lg w-full" alt="">
+        </div>
+        
+        <div class="p-4 rounded-lg border shadow bg-white">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold mb-2">Бұлшық ет</h1>
+            
+            <div class="mt-4">
+                <div class="py-2"> 
+                    <h1 class="text-xl sm:text-2xl  text-gray-800 font-bold">ЛИТИЙ (Li, 3)</h1>
+                </div>
+                <div class="border-t py-2">
+
+                    <!-- Адам ағзасындағы құрамы -->
+                    <div>
+                        <strong>Адам ағзасындағы құрамы:</strong>
+                        0,67 мг; қан - 0,004 мг/л;
+                        бұлшық ет ұлпасы-0,023 10-4%
+                    </div>
+
+                    <!-- Биологиялық рөл -->
+                    <div>
+                        <strong>Биологиялық рөл:</strong> 
+                        жоқ;
+                        әсер етеді, жүйке жүйесін иелене отырып, айқын және
+                        ұзақ симпатолитикалық әсері бар;
+                        кардиотоксикалық әсері бар;
+                        бұл бірқатар кернеулерде келесі металдарды денеден шығаруға ықпал етеді;
+                        тыныс алу кезінде канцероген, құрамында Li қосылыстары бар шаң бөлшектері қатерлі ісіктердің пайда болуына әкелуі мүмкін;
+                    </div>
+
+                    <!-- Дереккөздер -->
+                    <!-- <div>
+                        <strong>Дереккөздер:</strong> 
+                    </div> -->
+                   
+                    <!-- Күнделікті қажеттілік -->
+                    <div>
+                        <strong>Күнделікті қажеттілік:</strong>
+                        0,1-2 мг
+                    </div>
+
+                    <!-- Кемшілігі -->
+                    <div>
+                        <strong>Кемшілігі:</strong>
+                        манико-депрессиялық психозға, шизофренияға ықпал етеді және басқа психикалық аурулар.
+                    </div>
+                    
+                    <!-- Артықшылығы -->
+                    <div>
+                        <strong>Артықшылығы:</strong>
+                        шамадан тыс енгізу Na-ны ығыстыруы мүмкін; ұйқышылдық, жалпы
+                        әлсіздік, тәбеттің төмендеуі, шөлдеу, еріннің, төменгі жақтың, қолдың дүмпуі, дизартрия, гиперрефлексия.
+                    </div>
+
+                    <!-- Уыттылығы -->
+                    <div>
+                        <strong>Уыттылығы:</strong>
+                        жоғары концентрациядағы улы Li тұздары; 
+                        уытты доза –92-200 мг
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="my-4">
+                <a href="{% url 'human_body' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+            </div>
+        </div>
+
+    </div>
+    
+{% endblock content %}

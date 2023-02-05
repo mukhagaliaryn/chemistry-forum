@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Жыныстық бездер{% endblock title %}
+
+{% block content %}
+    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 my-5 mx-2 md:mx-0">
+        <div class="overflow-hidden rounded-lg w-full md:w-[480px]">
+            <img src="{% static 'images/bladder.png' %}" class="rounded-lg w-full" alt="">
+        </div>
+        
+        <div class="p-4 rounded-lg border shadow bg-white">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold mb-2">Жыныстық бездер</h1>
+            
+            <div class="mt-4">
+                <div class="py-2"> 
+                    <h1 class="text-xl sm:text-2xl  text-gray-800 font-bold">БРОМ (Br. 35)</h1>
+                </div>
+                <div class="border-t py-2">
+
+                    <!-- Адам ағзасындағы құрамы -->
+                    <div>
+                        <strong>Адам ағзасындағы құрамы:</strong>
+                        260 мг; қан - 4,7 мг/л;
+                        Сүйек тіні – 6,7 10-4%; 
+                        Бұлшықет тіні – 7,7 10-4%
+                    </div>
+
+                    <!-- Биологиялық рөл -->
+                    <div>
+                        <strong>Биологиялық рөл:</strong> 
+                        дененің әртүрлі тіндерінің құрамдас бөлігі (ең көп гипофиз, жұлын);
+                        орталық жүйке жүйесіндегі тежелу процесін күшейтеді, седативті әсер етеді;
+                        липазаны, пепсинді белсендіреді;
+                        бүйрек үсті безінің гормондық белсенділігін арттырады, тежейді
+                        қалқанша безінің қызметі;
+                        қандағы қант деңгейін реттеуге қатысады;
+                        жыныстық қозуды реттейді;
+                        ДНҚ құрылымын бұзып, оның денатурациясын тудыруы мүмкін
+                    </div>
+
+                    <!-- Дереккөздер -->
+                    <div>
+                        <strong>Дереккөздер:</strong> 
+                        ас тұзы, теңіз өнімдері, қауын
+                    </div>
+                   
+                    <!-- Күнделікті қажеттілік -->
+                    <div>
+                        <strong>Күнделікті қажеттілік:</strong>
+                        0,8-24 мг
+                    </div>
+
+                    <!-- Кемшілігі -->
+                    <div>
+                        <strong>Кемшілігі:</strong>
+                        шаршау, метаболикалық бұзылулар.
+                    </div>
+                    
+                    <!-- Артықшылығы -->
+                    <div>
+                        <strong>Артықшылығы:</strong>
+                        жыныстық қозуды басады;
+                        ауырлықтың төмендеуіне әкеледі. Есту, көру, сезімталдық; 
+                    </div>
+
+                    <!-- Уыттылығы -->
+                    <div>
+                        <strong>Уыттылығы:</strong>
+                        уытты доза - 3 г, Br –
+                        аз уытты, Br2 өте улы,
+                        өлім дозасы-35 г астам
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="my-4">
+                <a href="{% url 'human_body' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+            </div>
+        </div>
+
+    </div>
+    
+{% endblock content %}

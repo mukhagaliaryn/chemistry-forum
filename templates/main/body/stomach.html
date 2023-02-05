@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Асқазан шырыны{% endblock title %}
+
+{% block content %}
+    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 my-5 mx-2 md:mx-0">
+        <div class="overflow-hidden rounded-lg w-full md:w-[480px]">
+            <img src="{% static 'images/stomach.png' %}" class="rounded-lg w-full" alt="">
+        </div>
+        
+        <div class="p-4 rounded-lg border shadow bg-white">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold mb-2">Асқазан шырыны</h1>
+            
+            <div class="mt-4">
+                <div class="py-2"> 
+                    <h1 class="text-xl sm:text-2xl  text-gray-800 font-bold">ХЛОР (Cl, 17)</h1>
+                </div>
+                <div class="border-t py-2">
+
+                    <!-- Адам ағзасындағы құрамы -->
+                    <div>
+                        <strong>Адам ағзасындағы құрамы:</strong>
+                        95 г; қан - 2890 мг/л;
+                        Сүйек тіні-0,09 % ; бұлшықет тіні – 0,2-0,52 %
+                    </div>
+
+                    <!-- Биологиялық рөл -->
+                    <div>
+                        <strong>Биологиялық рөл:</strong> 
+                        өмірдің барлық түрлері үшін маңызды: кейбір ферменттерді белсендіреді;
+                        жасуша мембраналарының электр өткізгіштігіне әсер етеді; осмотикалық қан қысымын реттеуге және су алмасуын қалыпқа келтіруге қатысады, қышқыл-негіз тепе-теңдігін сақтайды; бұл асқазанда тұз қышқылын түзудің көзі болып табылады; жүйке импульсінің берілуіне қатысады; гликогеннің тұндырылуына ықпал етеді; шаш пен тырнақтың өсуіне әсер етеді; ДНҚ Қос спиралінің құрылымын бұзып, оның денатурациясын тудыруы мүмкін.
+                    </div>
+
+                    <!-- Дереккөздер -->
+                    <!-- <div>
+                        <strong>Дереккөздер:</strong> 
+                        
+                    </div> -->
+                   
+                    <!-- Күнделікті қажеттілік -->
+                    <!-- <div>
+                        <strong>Күнделікті қажеттілік:</strong>
+                    </div> -->
+
+                    <!-- Кемшілігі -->
+                    <div>
+                        <strong>Кемшілігі:</strong>
+                        гипохлоремия (асқазан-ішек жолдарының функциясының бұзылуы
+                        салдарынан төмен белсенділігі асқазан сөлінің және сілекей), шаршағыштық, спутанное тыныс
+                    </div>
+                    
+                    <!-- Артықшылығы -->
+                    <div>
+                        <strong>Артықшылығы:</strong>
+                        гиперхлоремия (асқазан сөлінің қышқылдығының жоғарылауы, ас қорыту бұзылыстары), дененің жалпы қышқылдығының жоғарылауы, тәбеттің төмендеуі, жүйке жүйесінің шамадан тыс қозуы.
+                    </div>
+
+                    <!-- Уыттылығы -->
+                    <div>
+                        <strong>Уыттылығы:</strong>
+                        газ тәрізді Cl (Cl2) және басқа да көптеген Cl қосылыстары өте улы.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="my-4">
+                <a href="{% url 'human_body' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+            </div>
+        </div>
+
+    </div>
+    
+{% endblock content %}

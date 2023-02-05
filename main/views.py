@@ -61,3 +61,44 @@ def bones(request):
 
 def nails(request):
     return render(request, 'main/body/nails.html', {})
+
+
+def hypophis(request):
+    return render(request, 'main/body/hypophis.html', {})
+
+
+def gland(request):
+    return render(request, 'main/body/gland.html', {})
+
+
+def lungs(request):
+    return render(request, 'main/body/lungs.html', {})
+
+
+def skin(request):
+    return render(request, 'main/body/skin.html', {})
+
+
+def fluid(request):
+    return render(request, 'main/body/fluid.html', {})
+
+
+def stomach(request):
+    return render(request, 'main/body/stomach.html', {})
+
+
+def liver(request):
+    return render(request, 'main/body/liver.html', {})
+
+
+def pancreas(request):
+    return render(request, 'main/body/pancreas.html', {})
+
+
+def sex_gland(request):
+    return render(request, 'main/body/sex-gland.html', {})
+
+
+def muscle(request):
+    return render(request, 'main/body/muscle.html', {})
+

@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Гипофиз{% endblock title %}
+
+{% block content %}
+    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 my-5 mx-2 md:mx-0">
+        <div class="overflow-hidden rounded-lg w-full md:w-[480px]">
+            <img src="{% static 'images/hypo.png' %}" class="rounded-lg w-full" alt="">
+        </div>
+        
+        <div class="p-4 rounded-lg border shadow bg-white">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold mb-2">Гипофиз</h1>
+            
+            <div class="mt-4">
+                <div class="py-2"> 
+                    <h1 class="text-xl sm:text-2xl  text-gray-800 font-bold">ХРОМ (Cr, 24)</h1>
+                </div>
+                <div class="border-t py-2">
+
+                    <!-- Адам ағзасындағы құрамы -->
+                    <div>
+                        <strong>Адам ағзасындағы құрамы:</strong>
+                        6-12 мг; қан-0,006-0,11 мг/л;
+                        Сүйек тіні – (0,1-3,3)10-4 %; бұлшық ет ұлпасы – (2,4-8,4) 10-2 %
+                        тіндердегі Cr деңгейі жасына қарай төмендейді
+                    </div>
+
+                    <!-- Биологиялық рөл -->
+                    <div>
+                        <strong>Биологиялық рөл:</strong> 
+                        өмірдің барлық түрлері үшін маңызды: стимулятор;
+                        глюкозаға төзімділік факторы денені энергиямен қамтамасыз етеді көмірсулардың глюкозаға айналуы; қандағы холестерин деңгейін төмендетуге көмектеседі;
+                        инсулин инсулиннің сіңуін тездететін ферменттің құрамына кіреді;
+                        организмге енетін канцероген, әсіресе үш және алты валентті Cr бу мен шаңның пайда болуы өкпенің қатерлі ісігін тудырады
+                    </div>
+
+                    <!-- Дереккөздер -->
+                    <div>
+                        <strong>Дереккөздер:</strong> 
+                        алма, устрица, теңіз моллюскалары, сиыр еті, құстар еті, арпа жармасы, ашытқы, сыра, грейпфрут шырыны, өскін бидай
+                    </div>
+                   
+                    <!-- Күнделікті қажеттілік -->
+                    <div>
+                        <strong>Күнделікті қажеттілік:</strong>
+                        0,01-1,2 мг
+                    </div>
+
+                    <!-- Кемшілігі -->
+                    <div>
+                        <strong>Кемшілігі:</strong>
+                        глюкозаға төзімділіктің бұзылуы; тамырлардың қатаюы; қант диабеті (II тип)
+                        Cr жетіспеушілігінің даму қаупі жүкті және бала емізетін әйелдерде жоғары,
+                        себебі ұрық оны қарқынды түрде жинақтайды.
+                    </div>
+                    
+                    <!-- Артықшылығы -->
+                    <!-- <div>
+                        <strong>Артықшылығы:</strong>
+                    </div> -->
+
+                    <!-- Уыттылығы -->
+                    <div>
+                        <strong>Уыттылығы:</strong>
+                        улы еритін қосылыстар, уытты доза-200 мг; өлім дозасы 3,0 г.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="my-4">
+                <a href="{% url 'human_body' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+            </div>
+        </div>
+
+    </div>
+    
+{% endblock content %}
