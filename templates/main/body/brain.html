@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Ми{% endblock title %}
+
+{% block content %}
+    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 my-5 mx-2 md:mx-0">
+        <div class="overflow-hidden rounded-lg w-full md:w-[480px]">
+            <img src="{% static 'images/brain.png' %}" class="rounded-lg w-full" alt="">
+        </div>
+        
+        <div class="p-4 rounded-lg border shadow bg-white">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold mb-2">Ми</h1>
+            
+            <div class="mt-4">
+                <div class="py-2"> 
+                    <h1 class="text-xl sm:text-2xl  text-gray-800 font-bold">АЛЮМИНИЙ (Al, 13)
+                    </h1>
+                </div>
+                <div class="border-t py-2">
+                    <div>
+                        <strong>Адам ағзасындағы құрамы:</strong>
+                        61 мг; қан - 0,39 мг/л
+                        сүйек ұлпасы – 0,7-2,8 см 10-4%; бұлшықет ұлпасы-4-27 см 10-4%
+                    </div>
+                    <div>
+                        <strong>Биологиялық рөл:</strong> 
+                        байқалмады
+                        <ul>
+                            <li>
+                                ол бірқатар ферменттердің (лактатдегидрогеназа, сілтілі) белсенділігін төмендетеді фосфотаздар, каталаздар және т. б.);
+                            </li>
+                            <li>
+                                гемопоэзге қатысатын ферменттердің белсенді орталықтарын блоктайды;
+                            </li>
+                            <li>
+                                сет зат алмасуға, әсіресе минералды заттарға әсер етеді;
+                            </li>
+                            <li>
+                                жүйке жүйесінің функцияларын реттеуге қатысады;
+                            </li>
+                            <li>
+                                жасушалардың көбеюіне және өсуіне тікелей әсер етеді;
+                            </li>
+                            <li>
+                                ядролық хроматин;
+                            </li>
+                            <li>
+                                бәсекелес P және Ca, Fe;
+                            </li>
+                            <li>
+                                организмде жинақталуы мүмкін;
+                            </li>
+                        </ul>
+                    </div>
+                   
+                    <div>
+                        <strong>Дереккөздер:</strong> 
+                        су, атмосфералық ауа, дәрі-дәрмектер, алюминий ыдыс, шай, алма
+                        Күнделікті қажеттілік: 35-49 мг
+                    </div>
+
+                    <div>
+                        <strong>Күнделікті қажеттілік:</strong>
+                        35-49 мг
+                    </div>
+
+                    <div>
+                        <strong>Артық:</strong>
+                        Альцеймер ауруының немесе мидағы жинақталған Кәрілік деменцияның дамуында маңызды рөл атқарады; ағзадағы Са кідірісін азайтады,
+                        <ul>
+                            <li>
+                                сүйектің сынуы; 
+                            </li>
+                            <li>
+                                адсорбцияны азайтады Р, бұл деңгейдің төмендеуіне әкеледі
+                            </li>
+                            <li>
+                                АТФ және фосфорлану процесінің бұзылуы; 
+                            </li>
+                            <li>
+                                Fe  дің  төмендеуі қаназдыққа, анемия 
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Уыттылығы:</strong>
+                        уытты доза-5 г; Аl тұздары улы, жүйке жүйесі
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="my-4">
+                <a href="{% url 'human_body' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+            </div>
+        </div>
+
+    </div>
+    
+{% endblock content %}

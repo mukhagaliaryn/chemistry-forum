@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Тырнақтар{% endblock title %}
+
+{% block content %}
+<div class="grid gap-4 grid-cols-1 md:grid-cols-2 my-5 mx-2 md:mx-0">
+    <div class="overflow-hidden rounded-lg w-full md:w-[480px]">
+        <img src="{% static 'images/nails.png' %}" class="rounded-lg w-full" alt="">
+    </div>
+    
+    <div class="p-4 rounded-lg border shadow bg-white">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold mb-2">Тырнақтар</h1>
+        
+        <div class="mt-4">
+            <div class="py-2"> 
+                <h1 class="text-xl sm:text-2xl  text-gray-800 font-bold">КРЕМНИЙ (Si, 14)</h1>
+            </div>
+            <div class="border-t py-2">
+
+                <!-- Адам ағзасындағы құрамы -->
+                <div>
+                    <strong>Адам ағзасындағы құрамы:</strong>
+                    деректер жоқ;
+                    қан-3,9 мг/л; сүйек ұлпасы-17, 10-4 %;
+                    бұлшықет тіндері – (1-2) 10-2 %
+                </div>
+
+                <!-- Биологиялық рөл -->
+                <div>
+                    <strong>Биологиялық рөл:</strong> 
+                    өмірдің кейбір формалары үшін маңызды:
+                    ол барлық органдар мен тіндерде кездеседі;
+                    дәнекер және эпителийдің қалыптасуына және беріктігіне әсер етеді
+                    мата;
+                    ол денеде өмір бойы жиналады;
+                </div>
+
+                <!-- Дереккөздер -->
+                <div>
+                    <strong>Дереккөздер:</strong> 
+                    өсімдік тектес өнімдер
+                </div>
+               
+                <!-- Күнделікті қажеттілік -->
+                <div>
+                    <strong>Күнделікті қажеттілік:</strong>
+                    18-1200 мг
+                </div>
+
+                <!-- Кемшілігі -->
+                <div>
+                    <strong>Кемшілігі:</strong>
+                    сынғыш," жансыз " шаш; қандағы Si мөлшерін азайту
+                </div>
+                
+                <!-- Артықшылығы -->
+                <div>
+                    <strong>Артықшылығы:</strong>
+                    құрамында кремний диоксиді (SiO2) бар шаңды ингаляциялау 
+                    бүкіл денеге әсер ететін өкпе силикозын тудырады.
+                </div>
+
+                <!-- Уыттылығы -->
+                <div>
+                    <strong>Уыттылығы:</strong>
+                    уытты емес; сутегімен уытты қосылыстар (газ тәрізді силандар)
+                </div>
+
+            </div>
+        </div>
+
+        <div class="my-4">
+            <a href="{% url 'human_body' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+        </div>
+    </div>
+
+</div>
+    
+{% endblock content %}

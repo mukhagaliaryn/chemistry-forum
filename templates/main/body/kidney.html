@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Бүйрек{% endblock title %}
+
+{% block content %}
+    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 my-5 mx-2 md:mx-0">
+        <div class="overflow-hidden rounded-lg w-full md:w-[480px]">
+            <img src="{% static 'images/kidney.png' %}" class="rounded-lg w-full" alt="">
+        </div>
+        
+        <div class="p-4 rounded-lg border shadow bg-white">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold mb-2">Бүйрек</h1>
+            
+            <div class="mt-4">
+                <div class="py-2"> 
+                    <h1 class="text-xl sm:text-2xl  text-gray-800 font-bold">КАДМИЙ (Cd, 48)</h1>
+                </div>
+                <div class="border-t py-2">
+
+                    <!-- Адам ағзасындағы құрамы -->
+                    <div>
+                        <strong>Адам ағзасындағы құрамы:</strong>
+                        0 мг; қан - 0,0052 мг/л;
+                        сүйек ұлпасы - 1,8 см 10-4%; бұлшықет ұлпасы – (0,14-3,2) 10-4 см %
+                        темекі шегушілерде темекі шекпейтіндерге қарағанда кадмий орташа есеппен көп
+                    </div>
+
+                    <!-- Биологиялық рөл -->
+                    <div>
+                        <strong>Биологиялық рөл:</strong> 
+                        Аз зерттелген; нейромаскулярлық берілісті тежейді; тератоген; канцероген.
+                    </div>
+
+                    <!-- Дереккөздер -->
+                    <div>
+                        <strong>Дереккөздер:</strong> 
+                        саңырауқұлақтар, өсімдік өнімдері, газ шығарындылары, темекі шегу
+                    </div>
+                   
+                    <!-- Күнделікті қажеттілік -->
+                    <div>
+                        <strong>Күнделікті қажеттілік:</strong>
+                        0,007-3 мг
+                    </div>
+
+                    <!-- Кемшілігі -->
+                    <!-- <div>
+                        <strong>Кемшілігі:</strong>
+                    </div> -->
+                    
+                    <!-- Артықшылығы -->
+                    <div>
+                        <strong>Артықшылығы:</strong>
+                        бүйректе жиналып, ауыр улану мен емделмейтін
+                        Бүйрек аурулары; жыныс бездерінің аурулары (әсіресе ұрықтар);
+                        итай-итай ауруы (бүкіл қаңқа сүйектерінің атрофиясы)
+                        ағзадан ұзақ уақыт шығарылады (шамамен 30 жыл);
+                    </div>
+
+                    <!-- Уыттылығы -->
+                    <div>
+                        <strong>Уыттылығы:</strong>
+                        уытты; уытты доза - 3-330 мг; өлімге әкелетін доза - 1,5-9 г
+                        Ассимиляцияға ықпал етеді: денеде Fe болмауы
+                        әйелдер уланудың ең жоғары қаупіне ұшырайды, өйткені олар менструация нәтижесінде Fe-ны үнемі «жоғалтады».
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="my-4">
+                <a href="{% url 'human_body' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+            </div>
+        </div>
+
+    </div>
+    
+{% endblock content %}

@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Сүйектер{% endblock title %}
+
+{% block content %}
+<div class="grid gap-4 grid-cols-1 md:grid-cols-2 my-5 mx-2 md:mx-0">
+    <div class="overflow-hidden rounded-lg w-full md:w-[480px]">
+        <img src="{% static 'images/bones.png' %}" class="rounded-lg w-full" alt="">
+    </div>
+    
+    <div class="p-4 rounded-lg border shadow bg-white">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold mb-2">Сүйектер</h1>
+        
+        <div class="mt-4">
+            <div class="py-2"> 
+                <h1 class="text-xl sm:text-2xl  text-gray-800 font-bold">НИКЕЛЬ (Ni, 28)</h1>
+            </div>
+            <div class="border-t py-2">
+
+                <!-- Адам ағзасындағы құрамы -->
+                <div>
+                    <strong>Адам ағзасындағы құрамы:</strong>
+                    1 мг; қан-0,01-0,05 мг/л;
+                    сүйек ұлпасы - шамамен 0,7 10-4%; 
+                    бұлшықет ұлпасы – (1-2) 10-4 сәйкес %
+                </div>
+
+                <!-- Биологиялық рөл -->
+                <div>
+                    <strong>Биологиялық рөл:</strong> 
+                    өмірдің кейбір формалары үшін маңызды: гемопоэз процестерін ынталандырады;
+                    нейромаскулярлық берілісті тежейді; канцероген.
+                </div>
+
+                <!-- Дереккөздер -->
+                <div>
+                    <strong>Дереккөздер:</strong> 
+                    газ тәрізді шығарындылар, тікелей байланыс, никельмен қапталған ыдыс.
+                </div>
+               
+                <!-- Күнделікті қажеттілік -->
+                <div>
+                    <strong>Күнделікті қажеттілік:</strong>
+                    0,3-0,5 мг
+                </div>
+
+                <!-- Кемшілігі -->
+                <!-- <div>
+                    <strong>Кемшілігі:</strong>
+                </div> -->
+                
+                <!-- Артықшылығы -->
+                <div>
+                    <strong>Артықшылығы:</strong>
+                    бронх қатерлі ісігі, байланыс дерматиті, сүйек сынғыштығының жоғарылауы.
+                </div>
+
+                <!-- Уыттылығы -->
+                <div>
+                    <strong>Уыттылығы:</strong>
+                    карбонил Ni жоғары уытты, уытты дозасы - 50 мг (егеуқұйрықтар үшін).
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <div class="py-2"> 
+                <h1 class="text-xl sm:text-2xl  text-gray-800 font-bold">СТРОНЦИЙ (Sr, 38)</h1>
+            </div>
+            <div class="border-t py-2">
+
+                <!-- Адам ағзасындағы құрамы -->
+                <div>
+                    <strong>Адам ағзасындағы құрамы:</strong>
+                    320 мг; қан - 0,031 мг/л;
+                    Сүйек тіні– (0,35-1,4)10-2 %; бұлшық ет ұлпасы-(0,12-0,35) 10-4 %
+                </div>
+
+                <!-- Биологиялық рөл -->
+                <div>
+                    <strong>Биологиялық рөл:</strong> 
+                    жоқ;
+                    сүйек түзілуіне қатысады, сүйектерде шоғырланады, 
+                    Са алмастыра алады; ол бірқатар ферменттерді (каталаза, карбоангидраза 
+                    және т. б.) белсендіреді).
+                </div>
+
+                <!-- Дереккөздер -->
+                <div>
+                    <strong>Дереккөздер:</strong> 
+                    су, дәнді дақылдар, жапырақты көкөністер (аскөк, ақжелкен)
+                </div>
+               
+                <!-- Күнделікті қажеттілік -->
+                <div>
+                    <strong>Күнделікті қажеттілік:</strong>
+                    0,8-5 мг
+                </div>
+
+                <!-- Кемшілігі -->
+                <!-- <div>
+                    <strong>Кемшілігі:</strong>
+                </div> -->
+                
+                <!-- Артықшылығы -->
+                <div>
+                    <strong>Артықшылығы:</strong>
+                    "стронций" рахиті (ауыз су құрамында Sr мөлшері көп жерлерде), хондро және остеодистрофия,
+                    деңгей ауруы (сүйектердің сынғыштығы мен деформациясының жоғарылауы)
+                </div>
+
+                <!-- Уыттылығы -->
+                <div>
+                    <strong>Уыттылығы:</strong>
+                    Sr иондары улы
+                </div>
+            </div>
+        </div>
+
+        <div class="my-4">
+            <a href="{% url 'human_body' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+        </div>
+    </div>
+
+</div>
+    
+{% endblock content %}
