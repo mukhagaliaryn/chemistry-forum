@@ -102,3 +102,26 @@ def sex_gland(request):
 def muscle(request):
     return render(request, 'main/body/muscle.html', {})
 
+
+def iron(request):
+    return render(request, 'main/body/iron.html', {})
+
+
+def marganes(request):
+    return render(request, 'main/body/marganes.html', {})
+
+
+def molybdenum(request):
+    return render(request, 'main/body/molybdenum.html', {})
+
+
+def tin(request):
+    return render(request, 'main/body/tin.html', {})
+
+
+def phosphorus(request):
+    return render(request, 'main/body/phosphorus.html', {})
+
+
+def mercury(request):
+    return render(request, 'main/body/mercury.html', {})

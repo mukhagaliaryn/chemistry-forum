@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}МАРГАНЕЦ (Mn, 25){% endblock title %}
+
+{% block content %}
+<div class="grid gap-4 grid-cols-1 md:grid-cols-2 my-5 mx-2 md:mx-0">
+    <div class="overflow-hidden rounded-lg w-full md:w-[480px]">
+        <img src="{% static 'images/marganes.jpg' %}" class="rounded-lg w-full" alt="">
+    </div>
+    
+    <div class="p-4 rounded-lg border shadow bg-white">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold mb-2">МАРГАНЕЦ (Mn, 25)</h1>
+        
+        <div class="mt-4">
+            <div class="py-2"> 
+                <h1 class="text-xl sm:text-2xl  text-gray-800 font-bold">МАРГАНЕЦ (Mn, 25)</h1>
+            </div>
+            <div class="border-t py-2">
+
+                <!-- Адам ағзасындағы құрамы -->
+                <div>
+                    <strong>Адам ағзасындағы құрамы:</strong>
+                    12 мг; қан – 0,0016-0,075 мг/л;
+                    Сүйек тіні– (0,2-100),10-4 %; бұлшық ет ұлпасы-(0,2-2,3) 10-2 %
+                </div>
+
+                <!-- Биологиялық рөл -->
+                <div>
+                    <strong>Биологиялық рөл:</strong> 
+                    өмірдің кейбір формалары үшін маңызды:
+                    жасушалар мен тіндерде жүретін тотығу процестерін белсендіреді, ферменттердің металлопротеин кешенінің құрамына кіреді (пируват декарбоксилаза, супероксидисмудаза және т. б.); бұл жас организмдердің қалыпты өсуіне және дамуына ықпал етеді, сүйектің өсуіне, дәнекер тініне, ішкі құлақтың эмбриональды дамуына қатысады; қозғыштықты арттырады адрено рецепторлардың сезімталдығын арттырады, ми қыртысында қорғаныс тежелуін күшейтеді; ДНҚ синтезін тездетеді; репродукция органдарының жұмысын реттейді, сперматогенезге әсер етеді.
+                </div>
+
+                <!-- Дереккөздер -->
+                <div>
+                    <strong>Дереккөздер:</strong> 
+                    Ананас, қара күріш, сұлы, нан өнімдері, бауыр, бүйрек, жаңғақтар, жалбыз, ақжелкен, соя, қалампыр, шай.
+                </div>
+               
+                <!-- Күнделікті қажеттілік -->
+                <div>
+                    <strong>Күнделікті қажеттілік:</strong>
+                    0,4-10 мг-ден 100 мг-ға дейін
+                </div>
+
+                <!-- Кемшілігі -->
+                <div>
+                    <strong>Кемшілігі:</strong>
+                    инсулин өндірісі төмендейді; остеопороз; физикалық жаттығулар кезінде анемия; эндемиялық зобтың жоғарылауы.
+                </div>
+                
+                <!-- Артықшылығы -->
+                <div>
+                    <strong>Артықшылығы:</strong>
+                    сүйек жүйесінің аурулары; құрамында Mn бар шаңды деммен жұту кезінде "марганец" пневмониясы дамиды және орталық жүйке әсер етеді.
+                </div>
+
+                <!-- Уыттылығы -->
+                <div>
+                    <strong>Уыттылығы:</strong>
+                    уытты доза - 10-20 мг
+                </div>
+
+            </div>
+        </div>
+
+        <div class="my-4 flex flex-wrap justify-between">
+            <a href="{% url 'iron' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+            <a href="{% url 'molybdenum' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+        </div>
+    </div>
+
+</div>
+    
+{% endblock content %}

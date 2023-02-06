@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}ФОСФОР (Р, 15){% endblock title %}
+
+{% block content %}
+<div class="grid gap-4 grid-cols-1 md:grid-cols-2 my-5 mx-2 md:mx-0">
+    <div class="overflow-hidden rounded-lg w-full md:w-[480px]">
+        <img src="{% static 'images/phosphor.jpeg' %}" class="rounded-lg w-full" alt="">
+    </div>
+    
+    <div class="p-4 rounded-lg border shadow bg-white">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold mb-2">ФОСФОР (Р, 15)</h1>
+        
+        <div class="mt-4">
+            <div class="py-2"> 
+                <h1 class="text-xl sm:text-2xl  text-gray-800 font-bold">ФОСФОР (Р, 15)</h1>
+            </div>
+            <div class="border-t py-2">
+
+                <!-- Адам ағзасындағы құрамы -->
+                <div>
+                    <strong>Адам ағзасындағы құрамы:</strong>
+                    780 г; қан - 345 мг/л;
+                    Сүйек тіні-6,7-7,1 %; бұлшықет тіні-0,3-0,85 %;
+                </div>
+
+                <!-- Биологиялық рөл -->
+                <div>
+                    <strong>Биологиялық рөл:</strong> 
+                    өмірдің барлық түрлері үшін маңызды: ол ақуыздардың, дәрумендердің, 
+                    нуклеин қышқылдарының, ферменттердің құрамына кіреді, фосфолипидтер және 
+                    т.б.; макроэргиялық қосылыстардың (АТФ, креатинфосфат) түзілуіне қатысады); орталық жүйке жүйесінің қалыпты жұмыс істеуі үшін қажет; бұл есте сақтау процестерін ынталандырады; потенциалды күшейтеді, оның жетіспеушілігі санға теріс әсер етеді;
+                </div>
+
+                <!-- Дереккөздер -->
+                <div>
+                    <strong>Дереккөздер:</strong> 
+                    жұмыртқа, майлы сүзбе, балық, қара бидай наны, жаңғақтар, бұршақ, бұршақ, соя, жүгері, жапырақты көкөністер (шпинат, салат, қырыққабат)
+                </div>
+               
+                <!-- Күнделікті қажеттілік -->
+                <div>
+                    <strong>Күнделікті қажеттілік:</strong>
+                    1,2 г; жаңа туған нәрестелерге - 0,12 г, 1 жасқа дейінгі балаларға - 0,8 г, 10 жасқа дейін – 1,65 г, 15 жасқа дейін – 1,7-1,8 г, жүкті және бала емізетін әйелдер – 1,5 г
+                    Кемшілігі: түзілудің тежелуімен сипатталатын гипофосфатемия
+                </div>
+
+                <!-- Кемшілігі -->
+                <!-- <div>
+                    <strong>Кемшілігі:</strong>
+                </div> -->
+                
+                <!-- Артықшылығы -->
+                <div>
+                    <strong>Артықшылығы:</strong>
+                    фосфор қышқылы подаграсына әкелетін гиперфосфатемия
+                    ( жұмсақ тіндер мен буындардағы кальций фосфорының тұнбасы), 
+                    Пагет ауруы (Са және Р тұздарының біркелкі емес тұндырылуына байланысты сүйектердің деформациясы), уролития.
+                </div>
+
+                <!-- Уыттылығы -->
+                <div>
+                    <strong>Уыттылығы:</strong>
+                    фосфаттар улы емес; Р4 және көптеген p қосылыстары өте улы, 
+                    Р4 – 60 мг өлім дозасы; радиоактивті Р-32 тамақ тізбектерінде 
+                    шоғырлануға қабілетті (биологиялық жинақтау)
+                </div>
+
+            </div>
+        </div>
+
+        <div class="my-4 flex flex-wrap justify-between">
+            <a href="{% url 'tin' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+            <a href="{% url 'mercury' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+        </div>
+    </div>
+
+</div>
+    
+{% endblock content %}

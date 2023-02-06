@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}ТЕМІР (Fе, 26){% endblock title %}
+
+{% block content %}
+<div class="grid gap-4 grid-cols-1 md:grid-cols-2 my-5 mx-2 md:mx-0">
+    <div class="overflow-hidden rounded-lg w-full md:w-[480px]">
+        <img src="{% static 'images/iron.jpeg' %}" class="rounded-lg w-full" alt="">
+    </div>
+    
+    <div class="p-4 rounded-lg border shadow bg-white">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold mb-2">ТЕМІР (Fе, 26)</h1>
+        
+        <div class="mt-4">
+            <div class="py-2"> 
+                <h1 class="text-xl sm:text-2xl  text-gray-800 font-bold">ТЕМІР (Fе, 26)</h1>
+            </div>
+            <div class="border-t py-2">
+
+                <!-- Адам ағзасындағы құрамы -->
+                <div>
+                    <strong>Адам ағзасындағы құрамы:</strong>
+                    4,2 г; қан - 447 мг/л;
+                    Сүйек тіні – 0,03-3,8 10-2%; бұлшықет тіні-1,8 10-2%
+                    Fe денесінің шамамен 20% - ы бауырда, көкбауырда, сүйек кемігінде сақталады және темірдің "физиологиялық резерві" болып табылады.
+                </div>
+
+                <!-- Биологиялық рөл -->
+                <div>
+                    <strong>Биологиялық рөл:</strong> 
+                    өмірдің барлық түрлері үшін маңызды: қан гемоглобинінің құрамына кіреді, 
+                    оны оттегімен "байланыстыру" үшін қажет; бұлшықет миоглобинінің құрамына 
+                    кіреді, жасушаны ынталандырады, протоплазма мен жасуша ядроларының ажырамас 
+                    бөлігі болып табылады; иммундық жүйенің қалыпты жұмыс істеуі үшін қажет.
+                </div>
+
+                <!-- Дереккөздер -->
+                <div>
+                    <strong>Дереккөздер:</strong> 
+                    кептірілген саңырауқұлақтар, қызыл ет (әсіресе қоян), қара ет, 
+                    құстар (әсіресе күркетауық), бүйрек, бидай, жарма, қарақұмық, 
+                    бұршақ (әсіресе бұршақ), көкөністер (әсіресе гүлді қырыққабат), 
+                    жемістер( әсіресе қауын мен қара өрік), какао, көкжидек.
+                </div>
+               
+                <!-- Күнделікті қажеттілік -->
+                <div>
+                    <strong>Күнделікті қажеттілік:</strong>
+                    6-40 мг: ерлер үшін 14 мг, әйелдер үшін 18 мг, 38 мг, жүкті 
+                    әйелдер үшін және емізетін әйелдер үшін 33 мг
+                </div>
+
+                <!-- Кемшілігі -->
+                <div>
+                    <strong>Кемшілігі:</strong>
+                    анемия; ісіну; иммундық жүйенің әлсіреуі және жиі суық тию; 
+                    шамадан тыс жұмыс, тітіркену, ұйқысыздық, бас ауруы; көз алдындағы "шыбындар", 
+                    қолдар мен аяқтар қатып қалады; тері құрғақ, тырнақтар көлденең 
+                    сызықтығы бар сынғыш; импотенция.
+                </div>
+                
+                <!-- Артықшылығы -->
+                <div>
+                    <strong>Артықшылығы:</strong>
+                    иммундық жүйенің әлсіреуі, артық темір бауырда, ұйқы безінде және 
+                    жүрек бұлшықетінде сақталады; Zn сіңуін төмендетеді; аритмияны тудырады.
+                </div>
+
+                <!-- Уыттылығы -->
+                <div>
+                    <strong>Уыттылығы:</strong>
+                    150-200 мг, өлім дозасы – 7-35 г
+                </div>
+
+            </div>
+        </div>
+
+        <div class="my-4 flex flex-wrap justify-between">
+            <a href="{% url 'nails' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+            <a href="{% url 'marganes' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Ары қарай</a>
+        </div>
+    </div>
+
+</div>
+    
+{% endblock content %}

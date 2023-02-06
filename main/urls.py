@@ -28,4 +28,11 @@ urlpatterns = [
     path('body/pancreas/', views.pancreas, name='pancreas'),
     path('body/sex-gland/', views.sex_gland, name='sex_gland'),
     path('body/muscle/', views.muscle, name='muscle'),
+
+    path('body/iron/', views.iron, name='iron'),
+    path('body/marganes/', views.marganes, name='marganes'),
+    path('body/molybdenum/', views.molybdenum, name='molybdenum'),
+    path('body/tin/', views.tin, name='tin'),
+    path('body/phosphorus/', views.phosphorus, name='phosphorus'),
+    path('body/mercury/', views.mercury, name='mercury'),
 ]

@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}МОЛИБДЕН (Мо, 42){% endblock title %}
+
+{% block content %}
+<div class="grid gap-4 grid-cols-1 md:grid-cols-2 my-5 mx-2 md:mx-0">
+    <div class="overflow-hidden rounded-lg w-full md:w-[480px]">
+        <img src="{% static 'images/molybdenum.jpeg' %}" class="rounded-lg w-full" alt="">
+    </div>
+    
+    <div class="p-4 rounded-lg border shadow bg-white">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold mb-2">МОЛИБДЕН (Мо, 42)</h1>
+        
+        <div class="mt-4">
+            <div class="py-2"> 
+                <h1 class="text-xl sm:text-2xl  text-gray-800 font-bold">МОЛИБДЕН (Мо, 42)</h1>
+            </div>
+            <div class="border-t py-2">
+
+                <!-- Адам ағзасындағы құрамы -->
+                <div>
+                    <strong>Адам ағзасындағы құрамы:</strong>
+                    деректер жоқ;
+                    қан – 0,001 мг/л; сүйек тіні-шамамен 0,7 10-4 %;
+                    бұлшық ет ұлпасы-0,018 10-4 %
+                </div>
+
+                <!-- Биологиялық рөл -->
+                <div>
+                    <strong>Биологиялық рөл:</strong> 
+                    өмірдің кейбір формалары үшін маңызды:
+                    тіндік тыныс алуға қатысатын кейбір ферменттердің (ксантиноксилаза, альдегидоксилаза, сульфатоксидаза) құрамына кіреді;  күшейтеді, фосфор-кальциевый алмасуды әсер етеді, көмірсу алмасуының кезегін, пуриновый алмасу; С дәрумені синтезіне қатысады;  реттейді внутрисекреторную функциясын жыныс бездерінің көмектесе отырып, кезінде импотенция және етеккір циклын қалыпқа келтіру.
+                </div>
+
+                <!-- Дереккөздер -->
+                <div>
+                    <strong>Дереккөздер:</strong> 
+                    жарма, бұршақ дақылдары, сүт, сәбіз
+                </div>
+               
+                <!-- Күнделікті қажеттілік -->
+                <div>
+                    <strong>Күнделікті қажеттілік:</strong>
+                    0,05-0,35 мг
+                </div>
+
+                <!-- Кемшілігі -->
+                <div>
+                    <strong>Кемшілігі:</strong>
+                    тіс кариесі, анемия
+                </div>
+                
+                <!-- Артықшылығы -->
+                <div>
+                    <strong>Артықшылығы:</strong>
+                    эндемиялық подагра немесе Молибден токсикозы, жүрек-тамыр аурулары; пурин алмасуының бұзылуы
+                </div>
+
+                <!-- Уыттылығы -->
+                <div>
+                    <strong>Уыттылығы:</strong>
+                    улы еритін қосылыстар; уытты доза-5 мг; 
+                </div>
+
+            </div>
+        </div>
+
+        <div class="my-4 flex flex-wrap justify-between">
+            <a href="{% url 'marganes' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+            <a href="{% url 'tin' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+        </div>
+    </div>
+
+</div>
+    
+{% endblock content %}

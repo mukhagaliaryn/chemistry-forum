@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}СЫНАП (HG, 80){% endblock title %}
+
+{% block content %}
+<div class="grid gap-4 grid-cols-1 md:grid-cols-2 my-5 mx-2 md:mx-0">
+    <div class="overflow-hidden rounded-lg w-full md:w-[480px]">
+        <img src="{% static 'images/mercury.jpg' %}" class="rounded-lg w-full" alt="">
+    </div>
+    
+    <div class="p-4 rounded-lg border shadow bg-white">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold mb-2">СЫНАП (HG, 80)</h1>
+        
+        <div class="mt-4">
+            <div class="py-2"> 
+                <h1 class="text-xl sm:text-2xl  text-gray-800 font-bold">СЫНАП (HG, 80)</h1>
+            </div>
+            <div class="border-t py-2">
+
+                <!-- Адам ағзасындағы құрамы -->
+                <div>
+                    <strong>Адам ағзасындағы құрамы:</strong>
+                    еректер жоқ;
+                    қан – 0,0078 мг/л; Сүйек тіні-0,45 10-4 %;
+                    бұлшық ет ұлпасы-(0,02-0,7) 10-4 % сынаппен улану қаупі жағдайында 
+                    индикатор болып табылатын шашта жиналады (10 мг/кг – қауіпсіз доза, 50 мг/кг – айқын аурудың белгілері, 300 мг/кг – өмірге қауіп төндіреді)
+                </div>
+
+                <!-- Биологиялық рөл -->
+                <div>
+                    <strong>Биологиялық рөл:</strong> 
+                    ақуыз молекулаларының биологиялық белсенді топтарын блоктайды; с эндоплазмалық ретикулум мембраналарын өзгертеді; РНҚ-ға қосылуға қабілетті; гормондардың шығарылуын белсендіреді;
+                </div>
+
+                <!-- Дереккөздер -->
+                <div>
+                    <strong>Дереккөздер:</strong> 
+                    жануарлар мен өсімдіктерден алынатын өнімдер, шай, балық
+                </div>
+               
+                <!-- Күнделікті қажеттілік -->
+                <div>
+                    <strong>Күнделікті қажеттілік:</strong>
+                    0,004-0,02 мг
+                </div>
+
+                <!-- Кемшілігі -->
+                <!-- <div>
+                    <strong>Кемшілігі:</strong>
+                </div> -->
+                
+                <!-- Артықшылығы -->
+                <div>
+                    <strong>Артықшылығы:</strong>
+                    меркурализм: жүйке жүйесі, асқазан-ішек әсер етеді
+                    тракт, қанда өзгерістер болады, стоматит және икемділік мүмкін
+                    қызыл иек; таз; минимат ауруы (көру аймағын шектеу, тіпті
+                    соқырлыққа дейін, қозғалыстарды үйлестірудің бұзылуы);
+                    сынаптың артық болуының белгісі-аузындағы металл дәмі
+                </div>
+
+                <!-- Уыттылығы -->
+                <div>
+                    <strong>Уыттылығы:</strong>
+                    улы, сонымен қатар улы және оның қосылыстары, 
+                    метилкоммерция өте улы
+                </div>
+
+            </div>
+        </div>
+
+        <div class="my-4 flex flex-wrap justify-between">
+            <a href="{% url 'phosphorus' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+            <a href="{% url 'human_body' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Аяқтау</a>
+        </div>
+    </div>
+
+</div>
+    
+{% endblock content %}
