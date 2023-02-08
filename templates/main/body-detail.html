@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Ми{% endblock title %}
+
+{% block content %}
+    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 my-5 mx-2 md:mx-0">
+        <div class="overflow-hidden rounded-lg w-full md:w-[480px]">
+            <img src="{{ human.img.url }}" class="rounded-lg w-full" alt="">
+        </div>
+        
+        <div class="p-4 rounded-lg border shadow bg-white">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold mb-2">{{ human.title }}</h1>
+            
+            <div class="mt-4">
+                {{ human.description | safe }}
+            </div>
+
+            <div class="my-4 flex flex-wrap justify-between">
+                <a href="{% url 'human_body' %}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Кері қайту</a>
+            </div>
+        </div>
+
+    </div>
+    
+{% endblock content %}

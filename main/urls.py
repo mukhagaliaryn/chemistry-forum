@@ -7,6 +7,7 @@ urlpatterns = [
     path('table/', views.table, name='table'),
     path('contact/', views.contact, name='contact'),
     path('human-body/', views.human_body, name='human_body'),
+    path('human-body/<slug>/', views.human_body_detail, name='human_body_detail'),
 
     path('body/hair/', views.hair, name='hair'),
     path('body/brain/', views.brain, name='brain'),
